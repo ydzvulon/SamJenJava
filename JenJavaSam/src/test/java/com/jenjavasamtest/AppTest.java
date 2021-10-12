@@ -1,4 +1,4 @@
-package com.samjenjava;
+package com.jenjavasamtest;
 
 import org.junit.jupiter.api.Test;
 

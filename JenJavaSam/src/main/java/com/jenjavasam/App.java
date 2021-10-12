@@ -1,4 +1,4 @@
-package com.samjenjava;
+package com.jenjavasam;
 
 /**
  * Hello world!

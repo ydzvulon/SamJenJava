@@ -4,7 +4,8 @@ version: '3'
 
 vars:
   _name_: maven.tasks.yml
-  MVN_EXE: __tools__/apache-maven-3.8.1/bin/mvn
+  MVN_EXE: |-
+    $(which mvn 2>/dev/null || echo __tools__/apache-maven-3.8.1/bin/mvn)
 
 tasks:
   default:
@@ -12,6 +13,11 @@ tasks:
       - echo "{{._name_}}"
       - task -l
     silent: true
+
+  info:
+    desc: _
+    cmds:
+      - echo "{{.MVN_EXE}}"
 
 
 
