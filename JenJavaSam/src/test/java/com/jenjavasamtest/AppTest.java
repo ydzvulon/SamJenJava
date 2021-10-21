@@ -11,8 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class AppTest {
     /**
      * Rigorous Test.
-     */
-    @Test
+     */    @Test
     void testApp() {
         assertEquals(1, 1);
         String action = "book/create";
